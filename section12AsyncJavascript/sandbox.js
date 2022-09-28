@@ -112,10 +112,9 @@ console.log(4);
        }
     });*/
 
-    
-    //93.Callback Hell
+//93.Callback Hell
 
-    /*const getTodos = (resource,callback) => {
+/*const getTodos = (resource,callback) => {
 
     const request = new XMLHttpRequest();
     
@@ -145,9 +144,9 @@ console.log(4);
     });
     });*/
 
-    //94. Promise Basics
+//94. Promise Basics
 
-    /*const getTodos = (resource,callback) => {
+/*const getTodos = (resource,callback) => {
         return new Promise((resolve,reject)=>{
             const request = new XMLHttpRequest();
         
@@ -183,20 +182,20 @@ console.log(4);
         });
        }*/
 
-       /*getSomething().then((data) => {
+/*getSomething().then((data) => {
         console.log(data);
        },(err) => {
         console.log(err)
        });*/
-       /*getSomething().then(data => {
+/*getSomething().then(data => {
         console.log(data);
        }).catch(err=>{
         console.log(err)
-       });*/ 
+       });*/
 
-       //.95. Chaining Promises
+//.95. Chaining Promises
 
-       /*const getTodos = (resource) => {
+/*const getTodos = (resource) => {
         return new Promise((resolve,reject)=>{
             const request = new XMLHttpRequest();
         
@@ -230,15 +229,16 @@ console.log(4);
      });
      */
 
-     //96. The Fetch API
+//96. The Fetch API
 
-     fetch('todos/luigi.json').then(response => {
-        //console.log(response);
-        return response.json();
-      }).then(data => {
-        console.log(data);
-      }).catch(err => {
-        console.log(err);
-      });
-
-
+/*fetch("todos/luigi.json")
+  .then((response) => {
+    //console.log(response);
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });*/
