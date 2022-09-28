@@ -75,7 +75,7 @@ setInterval(tick, 1000);*/
 
 //85.Date-fns Librrary
 
-const now = new Date();
+/*const now = new Date();
 
 console.log(dateFns.isToday(now));
 
@@ -90,3 +90,4 @@ console.log(dateFns.format(now, 'dddd, Do MMMM, YYYY'));
 const before = new Date('February 1 2019 12:00:00');
 
 console.log(dateFns.distanceInWords(now, before, {addSuffix: true}));
+*/
