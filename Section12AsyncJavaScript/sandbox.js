@@ -230,3 +230,56 @@ getTodos('json/luigi.json').then(data => {
 }).catch(err => {
   console.log('promise rejected:', err);
 });*/
+
+// 96.The Fetch API
+
+/*fetch('json/luigi.json').then(response => {
+    //console.log(response);
+    return response.json();
+  }).then(data => {
+    console.log(data);
+  }).catch(err => {
+    console.log(err);
+  });*/
+
+  //97.Async & Await
+
+  
+/*const getTodos = async () => {
+
+    let response = await fetch('json/luigi.json');
+    let data = await response.json();
+    return data;
+  
+  };
+  
+  console.log(1);
+  console.log(2);
+  
+  getTodos()
+    .then(data => console.log('resolved:', data));
+  
+  console.log(3);
+  console.log(4);
+  
+  // console.log(getTodos());
+  */
+ //98.Throwing & Catching Errors
+
+ 
+/*const getTodos = async () => {
+
+    let response = await fetch('json/luigi.json');
+  
+    if(response.status !== 200){
+      throw new Error('cannot fetch the data');
+    }
+  
+    let data = await response.json();
+    return data;
+  
+  };
+  
+  getTodos()
+    .then(data => console.log('resolved:', data))
+    .catch(err => console.log('rejected:', err.message));*/
