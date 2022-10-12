@@ -137,12 +137,25 @@ User.prototype.logout = function(){
        this.email=email;
     }
   }*/
+//124.Prototypal Inheritance
 
+function Admin(username,email,title){
+  User.call(this,username,email) ;
+  title.title = title;
+
+}
+
+Admin.prototype = Object.create(User.prototype);
+
+Admin.prototype.deleteUser= function(){
+    //delete a user
+}
 
 const userOne = new User('mario', 'mario@thenetninja.co.uk');
 const userTwo = new User('luigi', 'luigi@thenetninja.co.uk');
+const userTree = new Admin('shaun', 'shaun@thenetninja.co.uk ', 'black-belt ninja');
 
-console.log(userOne,userTwo)
+console.log(userOne,userTwo,userTree)
 userOne.login().logout();
 // the 'new' keyword
 // 1 - it creates a new empty object {}
